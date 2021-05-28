@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.web", "br.com.rdc.financeiro.web\br.com.rdc.financeiro.web.csproj", "{87220154-059D-4740-A639-5110344E53A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.domain", "br.com.rdc.financeiro.domain\br.com.rdc.financeiro.domain.csproj", "{B7E58B17-D223-4146-BF3C-A5E0B7B7421A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.persistence", "br.com.rdc.financeiro.persistence\br.com.rdc.financeiro.persistence.csproj", "{724049B0-8CC0-4D7E-BB27-C8C743BFAAA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.application", "br.com.rdc.financeiro.application\br.com.rdc.financeiro.application.csproj", "{6FC0C59D-BA65-4B0B-AE0D-B76999B02F62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.service", "br.com.rdc.financeiro.service\br.com.rdc.financeiro.service.csproj", "{14E42F01-D943-4B00-BCE4-66B873DCAB92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.com.rdc.financeiro.test", "br.com.rdc.financeiro.test\br.com.rdc.financeiro.test.csproj", "{0D805361-7C27-4BAF-A2C6-14F243523FB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87220154-059D-4740-A639-5110344E53A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87220154-059D-4740-A639-5110344E53A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87220154-059D-4740-A639-5110344E53A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87220154-059D-4740-A639-5110344E53A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E58B17-D223-4146-BF3C-A5E0B7B7421A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E58B17-D223-4146-BF3C-A5E0B7B7421A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E58B17-D223-4146-BF3C-A5E0B7B7421A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E58B17-D223-4146-BF3C-A5E0B7B7421A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724049B0-8CC0-4D7E-BB27-C8C743BFAAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724049B0-8CC0-4D7E-BB27-C8C743BFAAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724049B0-8CC0-4D7E-BB27-C8C743BFAAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724049B0-8CC0-4D7E-BB27-C8C743BFAAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC0C59D-BA65-4B0B-AE0D-B76999B02F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC0C59D-BA65-4B0B-AE0D-B76999B02F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC0C59D-BA65-4B0B-AE0D-B76999B02F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC0C59D-BA65-4B0B-AE0D-B76999B02F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E42F01-D943-4B00-BCE4-66B873DCAB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E42F01-D943-4B00-BCE4-66B873DCAB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E42F01-D943-4B00-BCE4-66B873DCAB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E42F01-D943-4B00-BCE4-66B873DCAB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0092EC82-5725-461A-B9A4-F023E031B3AD}
+	EndGlobalSection
+EndGlobal

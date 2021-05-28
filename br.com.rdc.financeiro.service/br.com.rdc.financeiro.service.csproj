@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\br.com.rdc.financeiro.application\br.com.rdc.financeiro.application.csproj" />
+    <ProjectReference Include="..\br.com.rdc.financeiro.domain\br.com.rdc.financeiro.domain.csproj" />
+    <ProjectReference Include="..\br.com.rdc.financeiro.persistence\br.com.rdc.financeiro.persistence.csproj" />
+  </ItemGroup>
+
+</Project>

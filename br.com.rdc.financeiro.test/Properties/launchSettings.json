@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "br.com.rdc.financeiro.test": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
