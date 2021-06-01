@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.appli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.service", "br.com.rdc.financeiro.service\br.com.rdc.financeiro.service.csproj", "{14E42F01-D943-4B00-BCE4-66B873DCAB92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.com.rdc.financeiro.test", "br.com.rdc.financeiro.test\br.com.rdc.financeiro.test.csproj", "{0D805361-7C27-4BAF-A2C6-14F243523FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.com.rdc.financeiro.test", "br.com.rdc.financeiro.test\br.com.rdc.financeiro.test.csproj", "{0D805361-7C27-4BAF-A2C6-14F243523FB4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9AD8E1AF-27F5-451A-8FDB-D49D5F990929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D805361-7C27-4BAF-A2C6-14F243523FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD8E1AF-27F5-451A-8FDB-D49D5F990929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD8E1AF-27F5-451A-8FDB-D49D5F990929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD8E1AF-27F5-451A-8FDB-D49D5F990929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD8E1AF-27F5-451A-8FDB-D49D5F990929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

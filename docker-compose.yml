@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  br.com.rdc.financeiro.web:
+    image: ${DOCKER_REGISTRY-}brcomrdcfinanceiroweb
+    build:
+      context: .
+      dockerfile: br.com.rdc.financeiro.web/Dockerfile

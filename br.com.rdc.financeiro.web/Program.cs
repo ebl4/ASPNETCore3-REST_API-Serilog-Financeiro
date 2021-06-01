@@ -12,7 +12,7 @@ namespace br.com.rdc.financeiro.web
         {
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
-                .WriteTo.SQLite(Environment.GetEnvironmentVariable("BaseLog"), tableName: "LogsAPIFinanceiro")
+                //.WriteTo.SQLite(Environment.GetEnvironmentVariable("BaseLog"), tableName: "LogsAPIFinanceiro")
                 .WriteTo.Console()
                 .CreateLogger();
 
