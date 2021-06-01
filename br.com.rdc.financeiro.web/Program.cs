@@ -2,6 +2,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Sinks.Elasticsearch;
 using System;
 
 namespace br.com.rdc.financeiro.web
@@ -12,6 +13,15 @@ namespace br.com.rdc.financeiro.web
         {
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
+                .WriteTo.Elasticsearch(
+                    options:
+                        new ElasticsearchSinkOptions(
+                            new Uri("http://localhost:9200"))
+                        {
+                            AutoRegisterTemplate = true,
+                            AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv7,
+                            IndexFormat = "financeiroapi-{0:yyyy.MM}"
+                        })
                 //.WriteTo.SQLite(Environment.GetEnvironmentVariable("BaseLog"), tableName: "LogsAPIFinanceiro")
                 .WriteTo.Console()
                 .CreateLogger();
