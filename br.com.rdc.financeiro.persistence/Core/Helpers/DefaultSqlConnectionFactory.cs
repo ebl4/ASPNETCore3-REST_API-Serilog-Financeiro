@@ -11,7 +11,7 @@ namespace br.com.rdc.financeiro.persistence.Core.Helpers
 
         public DefaultSqlConnectionFactory(IConfiguration configuration)
         {
-            _CONNECTION_STRING = configuration["ConnectionStrings:DefaultConnection"];
+            _CONNECTION_STRING = configuration["ConnectionStrings:AlternativeConnection"];
         }
         public IDbConnection Connection()
         {

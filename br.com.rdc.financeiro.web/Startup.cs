@@ -1,6 +1,5 @@
 using AutoMapper;
 using br.com.rdc.financeiro.application.DTO;
-using br.com.rdc.financeiro.application.IncluirLancamentos;
 using br.com.rdc.financeiro.domain.Financeiro.Model;
 using br.com.rdc.financeiro.persistence.Core.Helpers;
 using br.com.rdc.financeiro.persistence.Core.Interfaces;
@@ -10,16 +9,9 @@ using br.com.rdc.financeiro.service.Financeiro;
 using br.com.rdc.financeiro.service.Financeiro.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace br.com.rdc.financeiro.web
 {

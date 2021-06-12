@@ -5,6 +5,7 @@ using br.com.rdc.financeiro.domain.Financeiro.Model;
 using br.com.rdc.financeiro.service.Financeiro.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -17,12 +18,26 @@ namespace br.com.rdc.financeiro.web.Controllers
         private readonly IFinanceiroService _financeiroService;
         private readonly IMapper _mapper;
         private readonly ILogger<LancamentoController> _logger;
+        private static Contador _CONTADOR = new Contador();
 
         public LancamentoController(IFinanceiroService financeiroService, IMapper mapper, ILogger<LancamentoController> logger)
         {
             _financeiroService = financeiroService;
             _mapper = mapper;
             _logger = logger;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            _CONTADOR.Incrementar();
+            if (_CONTADOR.ValorAtual % 3 == 0) throw new ApplicationException();
+            _logger.LogInformation("Lancamentos Get: ");
+
+            var lancamentos = await _financeiroService.ListarLancamentos();
+            IList<LancamentoDTO> lancamentosDTO = _mapper.Map<IList<Lancamento>, LancamentoDTO[]>(lancamentos.Item1);
+            var result = new ListarLancamentosResponse() { Totalizadores = lancamentos.Item2, Lancamentos = lancamentosDTO };
+            return Ok(result);
         }
 
         [HttpGet("{data}")]

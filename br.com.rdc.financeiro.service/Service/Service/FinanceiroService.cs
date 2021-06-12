@@ -21,6 +21,14 @@ namespace br.com.rdc.financeiro.service.Financeiro
             return await _repository.IncluirLancamentos(lancamentos);
         }
 
+        public async Task<(IList<Lancamento>, IDictionary<string, decimal>)> ListarLancamentos()
+        {
+            var lancamentos = await _repository.ListarLancamentos();
+            var totalizador = Totalizador.LancamentoTotalizador(lancamentos);
+
+            return (lancamentos, totalizador);
+        }
+
         public async Task<(IList<Lancamento>, IDictionary<string, decimal>)> ListarLancamentos(string data)
         {
             var lancamentos = await _repository.ListarLancamentos(data);

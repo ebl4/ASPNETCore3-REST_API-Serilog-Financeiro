@@ -33,6 +33,28 @@ namespace br.com.rdc.financeiro.persistence.Financeiro.Repositories
             return result;
         }
 
+        public async Task<IList<Lancamento>> ListarLancamentos()
+        {
+            string sql = "SELECT * FROM TB_LANCAMENTO";
+
+            IList<Lancamento> listLancamentos = new List<Lancamento>();
+
+            using (var connectionDb = _connection.Connection())
+            {
+                connectionDb.Open();
+
+                var result = await connectionDb.QueryAsync<dynamic>(sql);
+
+                foreach (var item in result.ToList())
+                {
+                    var lancamento = new Lancamento(item.Id, (string)Convert.ToString(item.Data), (decimal)item.Valor, (string)item.Descricao, (string)item.Conta, (string)item.Tipo);
+                    listLancamentos.Add(lancamento);
+                }
+            }
+
+            return listLancamentos.ToList();
+        }
+
         public async Task<IList<Lancamento>> ListarLancamentos(string data)
         {
             string sql = "SELECT * FROM TB_LANCAMENTO WHERE FORMAT(DATA, 'yyyy-MM')=@Data";

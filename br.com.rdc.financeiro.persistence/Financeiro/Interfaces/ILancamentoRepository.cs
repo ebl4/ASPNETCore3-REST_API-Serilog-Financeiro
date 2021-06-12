@@ -8,5 +8,6 @@ namespace br.com.rdc.financeiro.persistence.Financeiro.Interfaces
     {
         Task<int> IncluirLancamentos(IList<Lancamento> lancamentos);
         Task<IList<Lancamento>> ListarLancamentos(string data);
+        Task<IList<Lancamento>> ListarLancamentos();
     }
 }
